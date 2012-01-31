@@ -1,0 +1,10 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="BrightIdeasSoftware.ObjectListView",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="BrightIdeasSoftware.DataListView",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_bright_ideas_software_1_1_data_list_view.html",tooltip="A DataListView is specialised to show the contents of a data source, which would..."];
+  Node1 -> Node3 [dir=back,color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+  Node3 [label="BrightIdeasSoftware.VirtualObjectListView",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_bright_ideas_software_1_1_virtual_object_list_view.html",tooltip="A virtual object list view operates in virtual mode, that is, it only gets model..."];
+}

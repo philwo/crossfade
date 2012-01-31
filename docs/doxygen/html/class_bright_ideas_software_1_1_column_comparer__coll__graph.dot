@@ -1,0 +1,16 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="BrightIdeasSoftware.ColumnComparer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="column",fontname="FreeSans.ttf"];
+  Node2 [label="BrightIdeasSoftware.OLVColumn",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_bright_ideas_software_1_1_o_l_v_column.html",tooltip="An OLVColumn knows which aspect of an object it should present."];
+  Node3 -> Node2 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="renderer",fontname="FreeSans.ttf"];
+  Node3 [label="BrightIdeasSoftware.BaseRenderer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_bright_ideas_software_1_1_base_renderer.html",tooltip="Renderers are responsible for drawing a single cell within an owner drawn ObjectListView..."];
+  Node2 -> Node3 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="column",fontname="FreeSans.ttf"];
+  Node4 -> Node3 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="objectListView",fontname="FreeSans.ttf"];
+  Node4 [label="BrightIdeasSoftware.ObjectListView",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_bright_ideas_software_1_1_object_list_view.html",tooltip="An object list displays 'aspects' of a collection of objects in a multi-column list..."];
+  Node2 -> Node4 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="lastSortColumn",fontname="FreeSans.ttf"];
+  Node5 -> Node3 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="listItem",fontname="FreeSans.ttf"];
+  Node5 [label="BrightIdeasSoftware.OLVListItem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_bright_ideas_software_1_1_o_l_v_list_item.html"];
+}
